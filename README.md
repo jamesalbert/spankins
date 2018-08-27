@@ -10,6 +10,7 @@ Usage:
   spankins auth --url=<url> --username=<username> (--password=<password>|--token=<token>) [--profile=<profile>]
   spankins ping --profile=<profile>
   spankins send <file> --profile=<profile> [--out=<out>]
+  spankins send template <file> --profile=<profile> (--arg=<key>=<val>)... [--out=<out>]
   spankins diagnose --profile=<profile> [--out=<out>]
   spankins master add <name> --profile=<profile> [--out=<out>]
   spankins agent-port set <port> --profile=<profile> [--out=<out>]
