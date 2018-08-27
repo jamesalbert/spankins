@@ -1,0 +1,2 @@
+recursive-include spankins/scripts *
+recursive-include spankins/templates *

@@ -3,10 +3,12 @@ from setuptools import setup, find_packages
 setup(
     name='spankins',
     author='jamesrobertalbert@gmail.com',
-    version='0.0.3',
+    version='0.0.10',
     url='https://github.com/jamesalbert/spankins',
     long_description='',
     packages=['spankins'],
+    package_data={'spankins': ['scripts', 'templates']},
+    include_package_data=True,
     install_requires=[
         'docopt',
         'requests',

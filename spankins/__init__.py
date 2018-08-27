@@ -128,14 +128,14 @@ def main():
         else:
             resp_text = client.send(script_path=script_path)
     elif args.get('diagnose'):
-        resp_text = client.send(script_path=f'{ROOT_DIR}/../scripts/diagnose.groovy')
+        resp_text = client.send(script_path=f'{ROOT_DIR}/scripts/diagnose.groovy')
     elif args.get('ping'):
-        resp_text = client.send(script_path=f'{ROOT_DIR}/../scripts/ping.groovy')
+        resp_text = client.send(script_path=f'{ROOT_DIR}/scripts/ping.groovy')
     elif args.get('master') and args.get('add'):
-        script = client._render(f'{ROOT_DIR}/../templates/add-master.groovy', name=args['<name>'])
+        script = client._render(f'{ROOT_DIR}/templates/add-master.groovy', name=args['<name>'])
         resp_text = client.send(script=script)
     elif args.get('agent-port') and args.get('set'):
-        script = client._render(f'{ROOT_DIR}/../templates/set-agent-port.groovy', port=args['<port>'])
+        script = client._render(f'{ROOT_DIR}/templates/set-agent-port.groovy', port=args['<port>'])
         resp_text = client.send(script=script)
     if args.get('--out'):
         Path(args['--out']).write_text(resp_text)
