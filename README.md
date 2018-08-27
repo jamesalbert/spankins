@@ -26,6 +26,10 @@ Options:
   --version     Show version.
 ```
 
+## Installation
+
+`pip install spankins`
+
 ## Quickstart
 
 Spankins makes interfacing with multiple jenkins instances easy with profiles. Credentials are stored locally in plain-text (totally legit).
