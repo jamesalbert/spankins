@@ -116,6 +116,7 @@ def main():
             token=args.get('--token')
         )
     client.assume(profile)
+    if args.get('auth'): exit(0)
     if args.get('send'):
         script_path = args['<file>']
         if not os.path.isabs(script_path):
