@@ -34,7 +34,7 @@ Options:
 
 Spankins makes interfacing with multiple jenkins instances easy with profiles. Credentials are stored locally in plain-text (totally legit).
 
-```
+```sh
 $ spankins auth --url=https://jenkins.me.com --username=jalbert@me.com --token=JHH34JHLJ3H43LH3 --profile=myJenkins
 $ cat ~/.jenkins | jq
 {
